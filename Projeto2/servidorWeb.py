@@ -8,7 +8,7 @@ cont = 0
 while True:
     socket_servidor = socket(AF_INET, SOCK_STREAM)
 
-    socket_servidor.bind(('192.168.1.101', 8080))
+    socket_servidor.bind(('localhost', 8080))
 
     socket_servidor.listen()
     socket_cliente, endereco_cliente = socket_servidor.accept()
