@@ -2,7 +2,7 @@ from socket import socket, AF_INET, SOCK_STREAM
 
 socket_cliente = socket(AF_INET, SOCK_STREAM)
 
-socket_cliente.connect(('192.168.1.101', 8080))
+socket_cliente.connect(('localhost', 8080))
 
 mensagem = ""
 mensagem += 'GET / HTTP/1.1\r\n'
