@@ -5,7 +5,7 @@ import random
 server_port = 12606
 server_socket = socket(AF_INET, SOCK_DGRAM)
 print('servidor funcionando...')
-server_socket.bind(("localhost", 12606))
+server_socket.bind(("localhost", server_port))
 auth = []
 
 
